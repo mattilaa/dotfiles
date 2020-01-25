@@ -1,0 +1,45 @@
+{
+    "languageserver": {
+        "rust": {
+            "command": "~/.cargo/bin/ra_lsp_server",
+            "filetypes": [
+                "rust",
+                "rs"
+            ],
+            "rootPatterns": ["Cargo.toml"]
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": ".cache/ccls"
+                }
+            }
+        }
+    }
+}
