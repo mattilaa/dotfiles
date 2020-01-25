@@ -37,3 +37,6 @@ set splitright
 
 " Editor keymaps
 nnoremap <esc><esc> :noh<return>
+
+" Trim trailing whitespaces on save
+autocmd BufWritePre * :%s/\s\+$//e
