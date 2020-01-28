@@ -13,6 +13,9 @@ set backspace=indent,eol,start
 " Enable line numbers
 set number
 
+" Enable relative numbers
+set relativenumber
+
 " Enable line/column info at bottom
 set ruler
 
@@ -40,3 +43,9 @@ nnoremap <esc><esc> :noh<return>
 
 " Trim trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Ignore case in search
+set ignorecase
+
+" Set right margin
+set cc=80
