@@ -41,6 +41,11 @@ set splitright
 " Editor keymaps
 nnoremap <esc><esc> :noh<return>
 
+" For better delete/paste (RIP Larry Tesles)
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP
+
 " Trim trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -49,3 +54,5 @@ set ignorecase
 
 " Set right margin
 set cc=80
+
+set encoding=UTF-8
