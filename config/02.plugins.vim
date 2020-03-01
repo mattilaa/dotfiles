@@ -4,7 +4,7 @@ set rtp+=~/.fzf
 " Plugins
 call plug#begin()
 
-Plug 'iCyMind/NeoSolarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'

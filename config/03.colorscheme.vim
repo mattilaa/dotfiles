@@ -1,5 +1,3 @@
 " Set solarized dark
-colorscheme NeoSolarized
 set background=dark
-
-
+colorscheme solarized8_high
