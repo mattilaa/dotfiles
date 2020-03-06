@@ -45,6 +45,8 @@ nnoremap <esc><esc> :noh<return>
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+nnoremap <C-k> :bp<Cr>
+nnoremap <C-l> :bn<Cr>
 
 " Trim trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e

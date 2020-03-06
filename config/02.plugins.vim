@@ -11,7 +11,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'cloudhead/neovim-fuzzy'
-Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
 
