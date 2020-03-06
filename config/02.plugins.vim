@@ -29,5 +29,3 @@ let g:coc_global_extensions = [
   \ ]
 
 filetype plugin on
-" Manually installed plugins
-" set runtimepath^=~/.config/nvim/bundle/ctrlp.vim
