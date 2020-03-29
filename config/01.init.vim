@@ -41,12 +41,23 @@ set splitright
 " Editor keymaps
 nnoremap <esc><esc> :noh<return>
 
-" For better delete/paste (RIP Larry Tesles)
+" For better delete/paste (RIP Larry Tesler)
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+
+" Browse buffers
 nnoremap <C-k> :bp<Cr>
 nnoremap <C-l> :bn<Cr>
+nnoremap <leader>bd :bd<Cr>
+
+" For system clipboard
+vnoremap <leader>yj "*y
+vnoremap <leader>pj "*p
+
+" Replace visually
+set inccommand=nosplit
+nnoremap <leader>k :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
 
 " Trim trailing whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
