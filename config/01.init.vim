@@ -69,3 +69,9 @@ set ignorecase
 set cc=80
 
 set encoding=UTF-8
+
+" Disable arrow-keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
