@@ -13,6 +13,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'cloudhead/neovim-fuzzy'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'morhetz/gruvbox'
+Plug 'jacoborus/tender.vim'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh \| UpdateRemotePlugins' }
 
 call plug#end()
