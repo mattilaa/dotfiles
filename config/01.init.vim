@@ -47,8 +47,8 @@ xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 
 " Browse buffers
-nnoremap <C-k> :bp<Cr>
-nnoremap <C-l> :bn<Cr>
+nnoremap <C-j> :bp<Cr>
+nnoremap <C-k> :bn<Cr>
 nnoremap <leader>bd :bd<Cr>
 
 " For system clipboard
