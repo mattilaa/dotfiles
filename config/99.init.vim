@@ -4,6 +4,8 @@ set termguicolors
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
+let g:loaded_clipboard_provider=1
+
 " Enable syntax highlighting
 syntax on
 
@@ -46,14 +48,29 @@ nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 
+" hjkl movement in insert and mode
+noremap <A-h> <C-o>h
+noremap <A-j> <C-o>j
+noremap <A-k> <C-o>k
+noremap <A-l> <C-o>l
+
 " Browse buffers
 nnoremap <C-j> :bp<Cr>
 nnoremap <C-k> :bn<Cr>
 nnoremap <leader>bd :bd<Cr>
 
 " For system clipboard
-vnoremap <leader>yj "*y
-vnoremap <leader>pj "*p
+function! ClipboardYank()
+  call system('xclip -i -selection clipboard', @@)
+endfunction
+function! ClipboardPaste()
+  let @@ = system('xclip -o -selection clipboard')
+endfunction
+
+vnoremap <leader>yj :call ClipboardYank()<cr>
+vnoremap <leader>pj :call ClipboardPaste()<cr>
+" vnoremap <leader>yj "*y
+" vnoremap <leader>pj "*p
 
 " Replace visually
 set inccommand=nosplit
@@ -70,8 +87,29 @@ set cc=80
 
 set encoding=UTF-8
 
-" Disable arrow-keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+" Force to enter the real neovim world
+
+" Remove newbie crutches in Command Mode
+cnoremap <Down> <Nop>
+cnoremap <Left> <Nop>
+cnoremap <Right> <Nop>
+cnoremap <Up> <Nop>
+
+" Remove newbie crutches in Insert Mode
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap <Up> <Nop>
+
+" Remove newbie crutches in Normal Mode
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+
+" Remove newbie crutches in Visual Mode
+vnoremap <Down> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Right> <Nop>
+vnoremap <Up> <Nop>
+
