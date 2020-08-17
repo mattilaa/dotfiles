@@ -49,28 +49,23 @@ xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 
 " hjkl movement in insert and mode
-noremap <A-h> <C-o>h
-noremap <A-j> <C-o>j
-noremap <A-k> <C-o>k
-noremap <A-l> <C-o>l
+nnoremap <A-h> <C-o>h
+nnoremap <A-j> <C-o>j
+nnoremap <A-k> <C-o>k
+nnoremap <A-l> <C-o>l
 
 " Browse buffers
 nnoremap <C-j> :bp<Cr>
 nnoremap <C-k> :bn<Cr>
 nnoremap <leader>bd :bd<Cr>
 
-" For system clipboard
-function! ClipboardYank()
-  call system('xclip -i -selection clipboard', @@)
-endfunction
-function! ClipboardPaste()
-  let @@ = system('xclip -o -selection clipboard')
-endfunction
+" Insert lines in normal mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
 
-vnoremap <leader>yj :call ClipboardYank()<cr>
-vnoremap <leader>pj :call ClipboardPaste()<cr>
-" vnoremap <leader>yj "*y
-" vnoremap <leader>pj "*p
+" System clipboard
+vnoremap <leader>yj "*y
+vnoremap <leader>pj "*p
 
 " Replace visually
 set inccommand=nosplit

@@ -1,5 +1,15 @@
-for f in split(glob('~/.config/nvim/config/*.vim'), '\n')
-        exe 'source' f
-endfor
+" Source plugins
+source ~/.config/nvim/config/plugins.vim
 
-let g:loaded_clipboard_provider = 1
+" Source plugin settings
+source ~/.config/nvim/config/blamer.vim
+source ~/.config/nvim/config/colorscheme.vim
+source ~/.config/nvim/config/coc.vim
+source ~/.config/nvim/config/fuzzy.vim
+source ~/.config/nvim/config/airline.vim
+source ~/.config/nvim/config/polyglot.vim
+source ~/.config/nvim/config/nerdcommenter.vim
+
+" Source settings
+source ~/.config/nvim/config/settings.vim
+
