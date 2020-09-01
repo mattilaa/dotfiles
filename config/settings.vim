@@ -4,8 +4,6 @@ set termguicolors
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-let g:loaded_clipboard_provider=1
-
 " Enable syntax highlighting
 syntax on
 
@@ -48,12 +46,6 @@ nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 
-" hjkl movement in insert and mode
-nnoremap <A-h> <C-o>h
-nnoremap <A-j> <C-o>j
-nnoremap <A-k> <C-o>k
-nnoremap <A-l> <C-o>l
-
 " Browse buffers
 nnoremap <C-j> :bp<Cr>
 nnoremap <C-k> :bn<Cr>
@@ -64,8 +56,7 @@ nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 
 " System clipboard
-vnoremap <leader>yj "*y
-vnoremap <leader>pj "*p
+vnoremap <leader>y "+y
 
 " Replace visually
 set inccommand=nosplit
