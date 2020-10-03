@@ -2,7 +2,7 @@
 
 ## Neovim
 
-I use [Coc](https://github.com/neoclide/coc.nvim) plugin for developing C++.
+I use [CoC](https://github.com/neoclide/coc.nvim) plugin for developing C++.
 [Clangd](https://github.com/clangd/clangd) language server is used for
 code autocompletion and jumping to definitions etc.
 
@@ -55,6 +55,10 @@ I use [Alacritty](https://github.com/alacritty/alacritty) as terminal emulator.
 ## Other stuff
 
 1. Oh My ZSH. I use zsh and [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
+```bash
+# Install link
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 2. Keyboard fine tuning for better typing experience with Neovim.
 ```bash
