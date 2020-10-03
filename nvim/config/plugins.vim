@@ -24,6 +24,7 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \ 'coc-lists',
+  \ 'coc-explorer',
   \ 'coc-git',
   \ 'coc-prettier',
   \ 'coc-json',
