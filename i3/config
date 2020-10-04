@@ -125,6 +125,9 @@ bindsym $mod+Shift+a exec amixer -D pulse sset Master 5%-
 bindsym $mod+Shift+x exec xbacklight -inc 5
 bindsym $mod+Shift+z exec xbacklight -dec 5
 
+# screen shot
+bindsym $mod+Shift+p exec gnome-screenshot -i
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
