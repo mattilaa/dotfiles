@@ -16,7 +16,7 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
-
+inoremap <silent><leader>h <Plug> execute 'edit' CocRequest('clangd', 'textDocument/switchSourceHeader', {'uri': 'file://'.expand("%:p")})
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>

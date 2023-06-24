@@ -1,2 +1,2 @@
-" let g:rooter_patterns = ['=']
+let g:rooter_patterns = ['=Session.vim']
 
